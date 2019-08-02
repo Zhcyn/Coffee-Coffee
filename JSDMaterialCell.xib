@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JSDMaterialCell">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="material_" translatesAutoresizingMaskIntoConstraints="NO" id="vO7-RV-K8q">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="139"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7u-V8-HBk">
+                    <rect key="frame" x="0.0" y="139" width="300" height="111"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bc4-VD-jmz">
+                            <rect key="frame" x="110" y="54.5" width="80" height="2"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="ax4-wO-Ac3"/>
+                                <constraint firstAttribute="width" constant="80" id="tEP-7g-w17"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kenyan coffee beans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7D-Bz-Mta">
+                            <rect key="frame" x="70.5" y="27.5" width="159.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffee Story" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H30-sy-I1j">
+                            <rect key="frame" x="102" y="66.5" width="96.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="bc4-VD-jmz" firstAttribute="top" secondItem="c7D-Bz-Mta" secondAttribute="bottom" constant="6" id="4JR-MH-MIx"/>
+                        <constraint firstItem="bc4-VD-jmz" firstAttribute="centerX" secondItem="H7u-V8-HBk" secondAttribute="centerX" id="4PT-7j-Yvc"/>
+                        <constraint firstItem="c7D-Bz-Mta" firstAttribute="centerX" secondItem="H7u-V8-HBk" secondAttribute="centerX" id="4Vb-qy-9cL"/>
+                        <constraint firstItem="bc4-VD-jmz" firstAttribute="centerY" secondItem="H7u-V8-HBk" secondAttribute="centerY" id="ayi-D7-Ixz"/>
+                        <constraint firstItem="H30-sy-I1j" firstAttribute="top" secondItem="bc4-VD-jmz" secondAttribute="bottom" constant="10" id="eec-OU-IhD"/>
+                        <constraint firstItem="H30-sy-I1j" firstAttribute="centerX" secondItem="H7u-V8-HBk" secondAttribute="centerX" id="ygK-km-5z3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vO7-RV-K8q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5am-4L-kHc"/>
+                <constraint firstAttribute="bottom" secondItem="H7u-V8-HBk" secondAttribute="bottom" id="9Kq-98-hsR"/>
+                <constraint firstItem="H7u-V8-HBk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Bcp-U2-Zxa"/>
+                <constraint firstItem="H7u-V8-HBk" firstAttribute="top" secondItem="vO7-RV-K8q" secondAttribute="bottom" id="BvF-38-PVe"/>
+                <constraint firstAttribute="trailing" secondItem="H7u-V8-HBk" secondAttribute="trailing" id="KpL-Sv-sry"/>
+                <constraint firstItem="vO7-RV-K8q" firstAttribute="height" secondItem="H7u-V8-HBk" secondAttribute="height" multiplier="1.25" id="Rlr-UI-TYU"/>
+                <constraint firstItem="vO7-RV-K8q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lxM-Rb-Zd7"/>
+                <constraint firstAttribute="trailing" secondItem="vO7-RV-K8q" secondAttribute="trailing" id="zbV-Mh-5uZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="coffeeStoryLabel" destination="H30-sy-I1j" id="F3X-Qc-fjM"/>
+                <outlet property="lineView" destination="bc4-VD-jmz" id="LKE-D2-A2g"/>
+                <outlet property="materialImageView" destination="vO7-RV-K8q" id="uLx-YE-9kf"/>
+                <outlet property="meterialNameLabel" destination="c7D-Bz-Mta" id="qd6-Kg-vgc"/>
+                <outlet property="textContentView" destination="H7u-V8-HBk" id="Bgq-dX-uCh"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="material_" width="152" height="116"/>
+    </resources>
+</document>

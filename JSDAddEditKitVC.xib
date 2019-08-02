@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JSDAddEditKitVC">
+            <connections>
+                <outlet property="addCoffeeButton" destination="s28-mD-Xlh" id="dyM-Pt-BCC"/>
+                <outlet property="coffeeImageView" destination="aHG-a3-IkY" id="30z-k4-cmq"/>
+                <outlet property="kitCNNameTextField" destination="LuA-il-NFj" id="g4I-hI-GTs"/>
+                <outlet property="kitENNameTextField" destination="Te8-eB-m7D" id="trL-hE-EXd"/>
+                <outlet property="kitIntroTextField" destination="Gfu-d8-o8R" id="afx-iP-VhM"/>
+                <outlet property="kitStepTextField" destination="lGk-XY-c4e" id="m5c-GU-p4r"/>
+                <outlet property="scrollView" destination="bue-Yz-cY6" id="uLI-MI-l4t"/>
+                <outlet property="scrollerViewContentView" destination="JuE-dt-RMV" id="1Ps-04-jE3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bue-Yz-cY6">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JuE-dt-RMV">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LuA-il-NFj" customClass="MDCTextField">
+                                    <rect key="frame" x="20" y="201" width="374" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Te8-eB-m7D" customClass="MDCTextField">
+                                    <rect key="frame" x="20" y="338" width="374" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gfu-d8-o8R" customClass="MDCMultilineTextField">
+                                    <rect key="frame" x="20" y="220" width="374" height="100"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aHG-a3-IkY">
+                                    <rect key="frame" x="167" y="20" width="80" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="80" id="Faq-9J-7ji"/>
+                                        <constraint firstAttribute="height" constant="80" id="IJh-Zs-Q5y"/>
+                                    </constraints>
+                                </imageView>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lGk-XY-c4e" customClass="MDCMultilineTextField">
+                                    <rect key="frame" x="20" y="489" width="374" height="100"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s28-mD-Xlh" customClass="MDCButton">
+                                    <rect key="frame" x="167" y="92" width="80" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="aHG-a3-IkY" firstAttribute="top" secondItem="JuE-dt-RMV" secondAttribute="top" constant="20" id="HLO-pS-OdX"/>
+                                <constraint firstItem="aHG-a3-IkY" firstAttribute="centerX" secondItem="JuE-dt-RMV" secondAttribute="centerX" id="exC-nJ-Jf6"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="JuE-dt-RMV" secondAttribute="bottom" id="8KV-f9-mEH"/>
+                        <constraint firstItem="JuE-dt-RMV" firstAttribute="height" secondItem="bue-Yz-cY6" secondAttribute="height" id="Fed-iv-yZG"/>
+                        <constraint firstAttribute="trailing" secondItem="JuE-dt-RMV" secondAttribute="trailing" id="GHP-fP-ASI"/>
+                        <constraint firstItem="JuE-dt-RMV" firstAttribute="width" secondItem="bue-Yz-cY6" secondAttribute="width" id="fMR-7z-BXx"/>
+                        <constraint firstItem="JuE-dt-RMV" firstAttribute="leading" secondItem="bue-Yz-cY6" secondAttribute="leading" id="iho-ky-FXH"/>
+                        <constraint firstItem="JuE-dt-RMV" firstAttribute="top" secondItem="bue-Yz-cY6" secondAttribute="top" id="vJf-6N-45O"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bue-Yz-cY6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1LW-X4-aeh"/>
+                <constraint firstItem="bue-Yz-cY6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="TxZ-bi-OLs"/>
+                <constraint firstAttribute="trailing" secondItem="bue-Yz-cY6" secondAttribute="trailing" id="fJh-p6-vZG"/>
+                <constraint firstAttribute="bottom" secondItem="bue-Yz-cY6" secondAttribute="bottom" id="lat-kd-IEz"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
